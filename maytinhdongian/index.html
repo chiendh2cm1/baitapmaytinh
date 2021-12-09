@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>may tinh co ban</title>
+    <style>
+        #result {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h2>Caculator</h2>
+<table style="width: 300px">
+    <tr>
+        <td>
+            <label for="input1">
+                <input type="number" id="input1">
+            </label>
+        </td>
+        <td>
+            <label for="input2">
+                <input type="number" id="input2">
+            </label>
+        </td>
+    </tr>
+</table>
+<table style="width: 300px">
+    <tr>
+        <td>
+            <button onclick="display1()">Addition(+)</button>
+        </td>
+        <td>
+            <button onclick="display2()">subtraction(-)</button>
+        </td>
+        <td>
+            <button onclick="display3()">Multiplication(/)</button>
+        </td>
+        <td>
+            <button onclick="display4()">Divition(*)</button>
+        </td>
+    </tr>
+</table>
+<p id="result">Result =</p>
+</body>
+<script>
+    function display1() {
+        let input1 = Number(document.getElementById("input1").value);
+        let input2 = Number(document.getElementById("input2").value);
+        let result = input1 + input2;
+        document.getElementById("result").innerHTML = "Result Divition:" + result;
+    }
+
+    function display2() {
+        let input1 = Number(document.getElementById("input1").value);
+        let input2 = Number(document.getElementById("input2").value);
+        let result = input1 - input2;
+        document.getElementById("result").innerHTML = "Result Divition:" + result;
+    }
+
+    function display3() {
+        let input1 = Number(document.getElementById("input1").value);
+        let input2 = Number(document.getElementById("input2").value);
+        let result = input1 / input2;
+        document.getElementById("result").innerHTML = "Result Divition:" + result;
+    }
+
+    function display4() {
+        let input1 = Number(document.getElementById("input1").value);
+        let input2 = Number(document.getElementById("input2").value);
+        let result = input1 * input2;
+        document.getElementById("result").innerHTML = "Result Divition:" + result;
+    }
+</script>
+</html>
