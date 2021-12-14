@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <form>
+        <table>
+            <tr>
+                <td colspan="4"><label><input type="text" class="calc" id="input"></label></td>
+            </tr>
+            <tr>
+                <td><input class="input" type="button" value="1" onclick="number(value)"></td>
+                <td><input class="input" type="button" value="2" onclick="number(value)"></td>
+                <td><input class="input" type="button" value="3" onclick="number(value)"></td>
+                <td>
+                    <button class="input" type="button" value="+" onclick="number(value)">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="input" type="button" value="4" onclick="number(value)"></td>
+                <td><input class="input" type="button" value="5" onclick="number(value)"></td>
+                <td><input class="input" type="button" value="6" onclick="number(value)"></td>
+                <td>
+                    <button class="input" type="button" value="-" onclick="number(value)">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="input" type="button" value="7" onclick="number(value)"></td>
+                <td><input class="input" type="button" value="8" onclick="number(value)"></td>
+                <td><input class="input" type="button" value="9" onclick="number(value)"></td>
+                <td>
+                    <button class="input" type="button" value="*" onclick="number(value)">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="input" type="button" value="0" onclick="number(value)"></td>
+                <td>
+                    <button class="input" type="reset">C</button>
+                </td>
+                <td>
+                    <button class="input" type="button" onclick="result()">=</button>
+                </td>
+                <td>
+                    <button class="input" type="button" value="/" onclick="number(value)">/</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+<script>
+    <!--nhập số-->
+    function number(value) {
+        document.getElementById('input').value += value;
+    }
+    //tinh toán
+    function result() {
+        document.getElementById('input').value = eval(document.getElementById('input').value);
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<style>-->
+<!--    table {-->
+<!--        width: 200px;-->
+<!--        text-align: center;-->
+<!--    }-->
+
+<!--    td {-->
+<!--        width: calc(100% / 4);-->
+<!--    }-->
+
+<!--    table, tr, td {-->
+<!--        border: 1px solid #333;-->
+<!--        border-collapse: collapse;-->
+<!--    }-->
+
+<!--    .calc {-->
+<!--        width: 200px;-->
+<!--        height: 50px;-->
+<!--        text-align: right;-->
+<!--        font-size: 20px;-->
+<!--    }-->
+
+<!--    .input {-->
+<!--        width: 50px;-->
+<!--        height: 50px;-->
+<!--        font-size: 30px;-->
+<!--    }-->
+
+<!--</style>-->
+
+
